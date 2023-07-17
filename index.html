@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.css">
+
   <title>Frontend Mentor | Interactive card details form</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -16,32 +17,44 @@
 </head>
 <body>
 
-  0000 0000 0000 0000
-  Jane Appleseed
-  00/00
-
-  000
-
-  Cardholder Name
-  e.g. Jane Appleseed
-
-  Card Number
-  e.g. 1234 5678 9123 0000
-
-  Exp. Date (MM/YY)
-  MM
-  YY
-
-  CVC
-  e.g. 123
-
-  Confirm
-
-  <!-- Completed state start -->
-
-  Thank you!
-  We've added your card details
-  Continue
+  <div class="container">
+    <main class="content">
+      <section class="content__card-section">
+        <p class="content__card-section__number-container">
+          <span class="content__card-section__number-container__number-content">
+            0000 0000 0000 0000
+          </span>
+        </p>
+        <span class="content__card-section__name">
+          Jane Appleseed
+        </span>
+        <date class="content__card-section__date">
+          00/00
+        </date>
+        <span class="content__card-section__back_number">
+          000
+        </span>
+      </section>
+      <!--<section class="content__form-section">
+        <form action="" class="content__form-section__form">
+          Cardholder Name
+          e.g. Jane Appleseed
+          Card Number
+          e.g. 1234 5678 9123 0000
+          Exp. Date (MM/YY)
+          MM
+          YY
+          CVC
+          e.g. 123
+          Confirm
+        </form>
+      </section> -->
+    </main>
+    <!-- Completed state start -->
+    <!--Thank you!
+    We've added your card details
+    Continue-->
+  </div>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
