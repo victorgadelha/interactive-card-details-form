@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="src/css/styles.css">
 
   <title>Frontend Mentor | Interactive card details form</title>
 
@@ -16,24 +16,25 @@
   </style>
 </head>
 <body>
-
-  <div class="container">
     <main class="content">
-      <section class="content__card-section">
-        <p class="content__card-section__number-container">
-          <span class="content__card-section__number-container__number-content">
-            0000 0000 0000 0000
-          </span>
-        </p>
-        <span class="content__card-section__name">
-          Jane Appleseed
-        </span>
-        <date class="content__card-section__date">
-          00/00
-        </date>
-        <span class="content__card-section__back_number">
-          000
-        </span>
+      <section class="card-section">
+        <div class="card-section__front-card">
+          <img class="card-section__front-card-logo" src="src/images/card-logo.svg" alt="card logo">
+          <p class="card-section__front-card-number">
+              0000 0000 0000 0000
+          </p>
+          <div class="card-section__front-card-flex">
+            <span class="card-section__front-card-name">
+              Jane Appleseed
+            </span>
+            <date class="card-section__front-card-date">
+              00/00
+            </date>
+          </div>
+          <!--<span class="card-section__card-back-number">
+            000
+          </span>-->
+        </div>
       </section>
       <!--<section class="content__form-section">
         <form action="" class="content__form-section__form">
@@ -49,12 +50,12 @@
           Confirm
         </form>
       </section> -->
-    </main>
+  
     <!-- Completed state start -->
     <!--Thank you!
     We've added your card details
     Continue-->
-  </div>
+  </main>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 

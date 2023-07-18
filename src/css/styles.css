@@ -1,0 +1,63 @@
+@font-face {
+  font-family: "Space Grotesk", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  flex-direction: column;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
+  font-size: 1.125rem;
+}
+body .content {
+  width: 100%;
+  min-height: 100vh;
+}
+body .content .card-section {
+  min-height: 100vh;
+}
+body .content .card-section__front-card {
+  background-image: url("../images/bg-card-front.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 28rem;
+  height: 14rem;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+}
+body .content .card-section__front-card-logo {
+  margin-bottom: 3rem;
+}
+body .content .card-section__front-card-number {
+  color: hsl(0, 0%, 100%);
+  font-size: 2.2rem;
+  letter-spacing: 0.1rem;
+  margin-bottom: 1.3rem;
+}
+body .content .card-section__front-card-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+  color: hsl(0, 0%, 100%);
+}
+body .content .card-section__front-card-name {
+  text-transform: uppercase;
+}
+body .content .card-section__front-card-date {
+  margin-right: 1.5rem;
+}
+
+/*# sourceMappingURL=styles.css.map */

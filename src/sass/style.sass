@@ -1,12 +1,54 @@
 @use 'variables'
 @use 'mixins'
-    
+@use 'fonts'
+
 *
     padding: 0
     margin: 0
     box-sizing: border-box
 
 body
-    @include mixins.flex-center
-    width: 100%
-    min-height: 100vh
+   @include mixins.flex-center
+   @include mixins.box-size
+   flex-direction: column
+   font-family: variables.$Family
+   font-weight: variables.$Font-Weight
+   font-size: variables.$Font-size
+
+   .content
+        @include mixins.box-size
+        
+        .card-section
+            
+            min-height: 100vh
+
+            &__front-card
+                @include mixins.bg-img('bg-card-front.png')
+                width: 28rem
+                height: 14rem
+                padding: 1.5rem
+                border-radius: .5rem
+
+                &-logo
+                    margin-bottom: 3rem
+
+                &-number
+                    color: variables.$White
+                    font-size: 2.2rem
+                    letter-spacing: .1rem
+                    margin-bottom: 1.3rem
+                    
+                
+                &-flex
+                    @include mixins.flex-center
+                    justify-content: space-between
+                    margin-top: 1rem
+                    color: variables.$White
+
+                &-name
+                    text-transform: uppercase
+                
+                &-date
+                    margin-right: 1.5rem
+                    
+                        

@@ -1,6 +1,16 @@
 @use 'variables'
 
-    @mixin flex-center
-        display: flex
-        justify-content: center
-        align-items: center
+@mixin flex-center
+    display: flex
+    justify-content: center
+    align-items: center
+
+@mixin bg-img($img)
+    background-image: url('../images/#{$img}')
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center
+
+@mixin box-size
+    width: 100%
+    min-height: 100vh
