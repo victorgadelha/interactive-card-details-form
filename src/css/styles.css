@@ -29,7 +29,7 @@ body .content .card-section {
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
-  width: 26rem;
+  width: 36.5rem;
   min-height: 100vh;
 }
 body .content .card-section__front-card {
@@ -39,7 +39,7 @@ body .content .card-section__front-card {
   background-position: center;
   position: absolute;
   top: 12rem;
-  left: 1rem;
+  left: 10rem;
   width: 35rem;
   height: 20rem;
   padding: 1.5rem;
@@ -50,7 +50,7 @@ body .content .card-section__front-card-logo {
 }
 body .content .card-section__front-card-number {
   color: hsl(0, 0%, 100%);
-  font-size: 2.5rem;
+  font-size: 2.7rem;
   letter-spacing: 0.3rem;
   margin-bottom: 3rem;
 }
@@ -67,7 +67,7 @@ body .content .card-section__front-card-name {
   text-transform: uppercase;
 }
 body .content .card-section__front-card-date {
-  margin-right: 2rem;
+  margin-right: 0.1rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
