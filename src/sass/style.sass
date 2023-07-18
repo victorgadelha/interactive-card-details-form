@@ -8,16 +8,16 @@
     box-sizing: border-box
 
 body
-   @include mixins.flex-center
-   @include mixins.box-size
-   flex-direction: column
+   width: 100%
+   min-height: 100vh
    font-family: variables.$Family
    font-weight: variables.$Font-Weight
    font-size: variables.$Font-size
 
    .content
         @include mixins.box-size
-        
+        display: flex
+    
         .card
             @include mixins.bg-img('bg-main-desktop.png')
             position: relative
@@ -65,4 +65,9 @@ body
                     margin-left: 23rem
                     color: variables.$White
                     
-                
+        .form
+            @include mixins.flex-center
+            @include mixins.box-size
+            
+            
+                    
