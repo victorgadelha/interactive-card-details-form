@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Space Grotesk", sans-serif;
-  src: url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
+  src: url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500&display=swap");
 }
 * {
   padding: 0;
@@ -24,6 +24,12 @@ body .content {
   min-height: 100vh;
 }
 body .content .card-section {
+  background-image: url("../images/bg-main-desktop.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  width: 26rem;
   min-height: 100vh;
 }
 body .content .card-section__front-card {
@@ -31,19 +37,22 @@ body .content .card-section__front-card {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  width: 28rem;
-  height: 14rem;
+  position: absolute;
+  top: 12rem;
+  left: 1rem;
+  width: 35rem;
+  height: 20rem;
   padding: 1.5rem;
   border-radius: 0.5rem;
 }
 body .content .card-section__front-card-logo {
-  margin-bottom: 3rem;
+  margin-bottom: 6rem;
 }
 body .content .card-section__front-card-number {
   color: hsl(0, 0%, 100%);
-  font-size: 2.2rem;
-  letter-spacing: 0.1rem;
-  margin-bottom: 1.3rem;
+  font-size: 2.5rem;
+  letter-spacing: 0.3rem;
+  margin-bottom: 3rem;
 }
 body .content .card-section__front-card-flex {
   display: flex;
@@ -52,12 +61,13 @@ body .content .card-section__front-card-flex {
   justify-content: space-between;
   margin-top: 1rem;
   color: hsl(0, 0%, 100%);
+  letter-spacing: 0.1rem;
 }
 body .content .card-section__front-card-name {
   text-transform: uppercase;
 }
 body .content .card-section__front-card-date {
-  margin-right: 1.5rem;
+  margin-right: 2rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

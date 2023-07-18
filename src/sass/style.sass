@@ -12,31 +12,37 @@ body
    @include mixins.box-size
    flex-direction: column
    font-family: variables.$Family
-   font-weight: variables.$Font-Weight
+   font-weight: variables.$Font-regular
    font-size: variables.$Font-size
 
    .content
         @include mixins.box-size
         
+
         .card-section
-            
+            @include mixins.bg-img('bg-main-desktop.png')
+            position: relative
+            width: 26rem
             min-height: 100vh
 
             &__front-card
                 @include mixins.bg-img('bg-card-front.png')
-                width: 28rem
-                height: 14rem
+                position: absolute
+                top: 12rem
+                left: 1rem
+                width: 35rem
+                height: 20rem
                 padding: 1.5rem
                 border-radius: .5rem
 
                 &-logo
-                    margin-bottom: 3rem
+                    margin-bottom: 6rem
 
                 &-number
                     color: variables.$White
-                    font-size: 2.2rem
-                    letter-spacing: .1rem
-                    margin-bottom: 1.3rem
+                    font-size: 2.5rem
+                    letter-spacing: .3rem
+                    margin-bottom: 3rem
                     
                 
                 &-flex
@@ -44,11 +50,12 @@ body
                     justify-content: space-between
                     margin-top: 1rem
                     color: variables.$White
+                    letter-spacing: .1rem
 
                 &-name
                     text-transform: uppercase
-                
+                    
                 &-date
-                    margin-right: 1.5rem
+                    margin-right: 2rem
                     
                         
