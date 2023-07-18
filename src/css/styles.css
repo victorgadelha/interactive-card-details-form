@@ -23,7 +23,7 @@ body .content {
   width: 100%;
   min-height: 100vh;
 }
-body .content .card-section {
+body .content .card {
   background-image: url("../images/bg-main-desktop.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -32,29 +32,29 @@ body .content .card-section {
   width: 36.5rem;
   min-height: 100vh;
 }
-body .content .card-section__front-card {
+body .content .card__front-card {
   background-image: url("../images/bg-card-front.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  position: absolute;
-  top: 12rem;
-  left: 10rem;
-  width: 35rem;
-  height: 20rem;
+  width: 33rem;
+  height: 18rem;
   padding: 1.5rem;
   border-radius: 0.5rem;
+  position: absolute;
+  top: 10rem;
+  left: 12rem;
 }
-body .content .card-section__front-card-logo {
-  margin-bottom: 6rem;
+body .content .card__front-card-logo {
+  margin-bottom: 5rem;
 }
-body .content .card-section__front-card-number {
+body .content .card__front-card-number {
   color: hsl(0, 0%, 100%);
-  font-size: 2.7rem;
+  font-size: 2.4rem;
   letter-spacing: 0.3rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2.5rem;
 }
-body .content .card-section__front-card-flex {
+body .content .card__front-card-flex {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -63,11 +63,31 @@ body .content .card-section__front-card-flex {
   color: hsl(0, 0%, 100%);
   letter-spacing: 0.1rem;
 }
-body .content .card-section__front-card-name {
+body .content .card__front-card-name {
   text-transform: uppercase;
 }
-body .content .card-section__front-card-date {
-  margin-right: 0.1rem;
+body .content .card__front-card-date {
+  margin-right: 1rem;
+}
+body .content .card .back-card {
+  background-image: url("../images/bg-card-back.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 33rem;
+  height: 18rem;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 30rem;
+  left: 17.5rem;
+}
+body .content .card .back-card__number {
+  margin-left: 23rem;
+  color: hsl(0, 0%, 100%);
 }
 
 /*# sourceMappingURL=styles.css.map */

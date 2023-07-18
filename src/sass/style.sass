@@ -18,7 +18,7 @@ body
    .content
         @include mixins.box-size
         
-        .card-section
+        .card
             @include mixins.bg-img('bg-main-desktop.png')
             position: relative
             width: 36.5rem
@@ -26,22 +26,19 @@ body
 
             &__front-card
                 @include mixins.bg-img('bg-card-front.png')
+                @include mixins.card-shape
                 position: absolute
-                top: 12rem
-                left: 10rem
-                width: 35rem
-                height: 20rem
-                padding: 1.5rem
-                border-radius: .5rem
-
+                top: 10rem
+                left: 12rem
+                
                 &-logo
-                    margin-bottom: 6rem
+                    margin-bottom: 5rem
 
                 &-number
                     color: variables.$White
-                    font-size: 2.7rem
+                    font-size: 2.4rem
                     letter-spacing: .3rem
-                    margin-bottom: 3rem
+                    margin-bottom: 2.5rem
                     
                 &-flex
                     @include mixins.flex-center
@@ -54,6 +51,18 @@ body
                     text-transform: uppercase
                 
                 &-date
-                    margin-right: .1rem
+                    margin-right: 1rem
                     
-                        
+            .back-card 
+                @include mixins.bg-img('bg-card-back.png')
+                @include mixins.card-shape
+                @include mixins.flex-center
+                position: absolute
+                top: 30rem
+                left: 17.5rem
+
+                &__number 
+                    margin-left: 23rem
+                    color: variables.$White
+                    
+                
