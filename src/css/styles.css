@@ -25,34 +25,34 @@ body .content {
 }
 body .content .card-section {
   background-image: url("../images/bg-main-desktop.png");
-  background-size: cover;
+  background-size: 30rem 100%;
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
-  width: 26rem;
+  width: 30%;
   min-height: 100vh;
 }
 body .content .card-section__front-card {
   background-image: url("../images/bg-card-front.png");
-  background-size: cover;
+  background-size: 30rem 100%;
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
   top: 12rem;
   left: 1rem;
-  width: 35rem;
+  width: 40rem;
   height: 20rem;
   padding: 1.5rem;
   border-radius: 0.5rem;
 }
 body .content .card-section__front-card-logo {
-  margin-bottom: 6rem;
+  margin-bottom: 3rem;
 }
 body .content .card-section__front-card-number {
   color: hsl(0, 0%, 100%);
-  font-size: 2.5rem;
+  font-size: 3rem;
   letter-spacing: 0.3rem;
-  margin-bottom: 3rem;
+  margin-bottom: 1.3rem;
 }
 body .content .card-section__front-card-flex {
   display: flex;
@@ -61,13 +61,14 @@ body .content .card-section__front-card-flex {
   justify-content: space-between;
   margin-top: 1rem;
   color: hsl(0, 0%, 100%);
+  font-size: 1.2rem;
   letter-spacing: 0.1rem;
 }
 body .content .card-section__front-card-name {
   text-transform: uppercase;
 }
 body .content .card-section__front-card-date {
-  margin-right: 2rem;
+  margin-right: 1.5rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
