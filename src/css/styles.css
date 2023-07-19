@@ -14,6 +14,7 @@ body {
   font-family: "Space Grotesk", sans-serif;
   font-weight: 500;
   font-size: 1.125rem;
+  overflow-y: hidden;
 }
 body .content {
   width: 100%;
@@ -99,7 +100,6 @@ body .content .form__data {
   font-size: 1.125rem;
   width: 30rem;
   height: 30rem;
-  border: 1px solid black;
 }
 body .content .form__wrapper {
   display: flex;
@@ -133,7 +133,7 @@ body .content .form #cvc {
   width: 8.3rem;
 }
 body .content .form ::placeholder {
-  color: hsl(279, 6%, 55%);
+  color: hsl(270, 3%, 87%);
 }
 body .content .form__button {
   width: 20rem;
