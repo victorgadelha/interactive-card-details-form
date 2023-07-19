@@ -110,12 +110,12 @@ body .content .form__data-title {
   color: hsl(278, 68%, 11%);
 }
 body .content .form input {
-  height: 3rem;
+  height: 2.5rem;
   margin: 0.2rem 0 0 0.2rem;
   border-radius: 0.5rem;
 }
 body .content .form #name, body .content .form #number {
-  width: 20rem;
+  width: 22rem;
 }
 body .content .form__month-year {
   display: flex;
@@ -130,7 +130,7 @@ body .content .form__cvc {
   margin-left: 2rem;
 }
 body .content .form #cvc {
-  width: 8.3rem;
+  width: 10.3rem;
 }
 body .content .form ::placeholder {
   color: hsl(270, 3%, 87%);
