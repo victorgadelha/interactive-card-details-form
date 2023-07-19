@@ -42,24 +42,35 @@
       </section>
       <section class="form">
           <form action="" class="form__data">
-            <fieldset>
-              <legend>Dados do cartão</legend>
-              <h3>Cardholder Name</h3>
+              <h5 class="form__data-title">
+                Cardholder Name
+              </h5>
               <input type="text" id="name" name="name" 
               placeholder="e.g. Jane Appelseed">
-              <h3>Card Number</h3>
-              <input type="number" id="number" name="number" 
-              placeholder="e.g. 1234 5678 9123 0000">
-              <h3>Exp. Date (MM/YY)</h3>
-              <input type="datetime" id="month" name="number" 
-              placeholder="MM">
-              <input type="datetime" id="year" name="number" 
-              placeholder="YY">
-              <h3>CVC</h3>
-              <input type="number" id="year" name="number" 
-              placeholder="e.g. 123">
-              <button type="submit"><p>Confirm</p></button>
-            </fieldset>
+                <h5 class="form__data-title">
+                  Card Number
+                </h5>
+              <input type="number" id="number" name="number" placeholder="e.g. 1234 5678 9123 0000">
+              <div class="form__wrapper">
+                <div class="form__date">
+                  <h5 class="form__data-title">
+                    Exp. Date (MM/YY)
+                  </h5>
+                  <div class="form__month-year">
+                    <input type="datetime" id="month" name="month" placeholder="MM">
+                    <input type="datetime" id="year" name="year" placeholder="YY">
+                  </div>
+                </div>
+                <div class="form__cvc">
+                  <h5 class="form__data-title">
+                    CVC
+                  </h5>
+                  <input type="number" id="cvc" name="cvc" placeholder="e.g. 123">
+                </div>
+              </div>
+              <button class="form__button" type="submit">
+                <p>Confirm</p>
+              </button>
           </form>
         
       </section>

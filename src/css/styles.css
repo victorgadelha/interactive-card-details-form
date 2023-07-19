@@ -92,6 +92,57 @@ body .content .form {
   align-items: center;
   width: 100%;
   min-height: 100vh;
+  margin-top: 5rem;
+  letter-spacing: 0.1rem;
+}
+body .content .form__data {
+  font-size: 1.125rem;
+  width: 30rem;
+  height: 30rem;
+  border: 1px solid black;
+}
+body .content .form__wrapper {
+  display: flex;
+  margin-bottom: 2rem;
+}
+body .content .form__data-title {
+  margin-top: 1rem;
+  color: hsl(278, 68%, 11%);
+}
+body .content .form #name, body .content .form #number {
+  width: 20rem;
+}
+body .content .form__month-year {
+  display: flex;
+}
+body .content .form input {
+  height: 3rem;
+  margin: 0.2rem 0 0 0.3rem;
+  border-radius: 0.5rem;
+}
+body .content .form #month, body .content .form #year {
+  width: 4.5rem;
+}
+body .content .form #year {
+  margin-left: 0.5rem;
+}
+body .content .form__cvc {
+  margin-left: 2rem;
+}
+body .content .form #cvc {
+  width: 8.3rem;
+}
+body .content .form ::placeholder {
+  color: hsl(279, 6%, 55%);
+}
+body .content .form__button {
+  width: 20rem;
+  height: 3rem;
+  margin-left: 0.3rem;
+  border-radius: 0.5rem;
+  background-color: hsl(278, 68%, 11%);
+  color: hsl(0, 0%, 100%);
+  letter-spacing: 0.1rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
