@@ -13,6 +13,7 @@ body
    font-family: variables.$Family
    font-weight: variables.$Font-Weight
    font-size: variables.$Font-size
+   
 
    .content
         @include mixins.box-size
@@ -85,14 +86,14 @@ body
                 margin-top: 1rem
                 color: variables.$Very-dark-violet
 
+            input
+                @include mixins.input-shape
+
             #name, #number
                 width: 20rem
             
             &__month-year
                 display: flex
-                
-            input
-                @include mixins.input-shape
                 
             #month, #year
                 width: 4.5rem
@@ -106,7 +107,6 @@ body
             #cvc
                 width: 8.3rem
                 
-            
             ::placeholder
                 color: variables.$Dark-grayish-violet
                 

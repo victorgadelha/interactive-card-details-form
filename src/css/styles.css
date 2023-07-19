@@ -109,16 +109,16 @@ body .content .form__data-title {
   margin-top: 1rem;
   color: hsl(278, 68%, 11%);
 }
+body .content .form input {
+  height: 3rem;
+  margin: 0.2rem 0 0 0.2rem;
+  border-radius: 0.5rem;
+}
 body .content .form #name, body .content .form #number {
   width: 20rem;
 }
 body .content .form__month-year {
   display: flex;
-}
-body .content .form input {
-  height: 3rem;
-  margin: 0.2rem 0 0 0.3rem;
-  border-radius: 0.5rem;
 }
 body .content .form #month, body .content .form #year {
   width: 4.5rem;
