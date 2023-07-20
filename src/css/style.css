@@ -66,7 +66,7 @@ body .content .card__front-card-name {
   text-transform: uppercase;
 }
 body .content .card__front-card-date {
-  margin-right: 1rem;
+  margin-right: 0.1rem;
 }
 body .content .card .back-card {
   background-image: url("../images/bg-card-back.png");
