@@ -1,6 +1,6 @@
 @use 'variables'
 @use 'mixins'
-@use 'fonts'
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500&display=swap')
 
 *
     padding: 0
@@ -22,7 +22,7 @@ body
         .card
             @include mixins.bg-img('bg-main-desktop.png')
             position: relative
-            width: 45rem
+            width: 46rem
             min-height: 100vh
 
             &__front-card
@@ -37,7 +37,7 @@ body
 
                 &-number
                     color: variables.$White
-                    font-size: 2.18rem
+                    font-size: 2rem
                     letter-spacing: .3rem
                     margin-bottom: 2rem
                     
@@ -64,11 +64,10 @@ body
                 left: 15.5rem
 
                 &__cvc
-                    margin-left: 23rem
+                    margin-left: 22rem
                     color: variables.$White
                     letter-spacing: .1rem
-                    
-                    
+
         .form
             @include mixins.flex-center
             @include mixins.box-size
@@ -90,7 +89,9 @@ body
             input
                 @include mixins.input-shape
                 margin-bottom: 2rem
-                border-color: variables.$Light-grayish-violet
+                border: 1px solid variables.$Light-grayish-violet
+                font-family: variables.$Family
+                font-size: 1rem
 
             #name, #number
                 width: 21rem
@@ -119,8 +120,10 @@ body
                 height: 3rem
                 margin-left: .3rem
                 border-radius: .5rem
+                border: none
                 background-color: variables.$Very-dark-violet
                 color: variables.$White
                 letter-spacing: .1rem
+                cursor: pointer
                 
                 
