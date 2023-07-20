@@ -15,7 +15,6 @@ body
    font-size: variables.$Font-size
    overflow-y: hidden
    
-
    .content
         @include mixins.box-size
         display: flex
@@ -23,24 +22,24 @@ body
         .card
             @include mixins.bg-img('bg-main-desktop.png')
             position: relative
-            width: 36.5rem
+            width: 45rem
             min-height: 100vh
 
             &__front-card
                 @include mixins.bg-img('bg-card-front.png')
                 @include mixins.card-shape
                 position: absolute
-                top: 10rem
-                left: 12rem
+                top: 12rem
+                left: 10rem
                 
                 &-logo
                     margin-bottom: 5rem
 
                 &-number
                     color: variables.$White
-                    font-size: 2.4rem
+                    font-size: 2.18rem
                     letter-spacing: .3rem
-                    margin-bottom: 2.5rem
+                    margin-bottom: 2rem
                     
                 &-flex
                     @include mixins.flex-center
@@ -55,17 +54,20 @@ body
                 &-date
                     margin-right: 1rem
                     
+                    
             .back-card 
                 @include mixins.bg-img('bg-card-back.png')
                 @include mixins.card-shape
                 @include mixins.flex-center
                 position: absolute
-                top: 30rem
-                left: 17.5rem
+                top: 31rem
+                left: 15.5rem
 
-                &__number 
+                &__cvc
                     margin-left: 23rem
                     color: variables.$White
+                    letter-spacing: .1rem
+                    
                     
         .form
             @include mixins.flex-center
@@ -75,7 +77,7 @@ body
             
             &__data
                 font-size: variables.$Font-size
-                width: 30rem
+                min-width: 30rem
                 height: 30rem
                 
             
@@ -110,6 +112,7 @@ body
                 
             ::placeholder
                 color: variables.$Light-grayish-violet
+                padding-left: 1rem
                 
             &__button
                 width: 22rem
