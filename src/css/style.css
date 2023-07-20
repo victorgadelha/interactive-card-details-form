@@ -94,7 +94,7 @@ body .content .form {
   align-items: center;
   width: 100%;
   min-height: 100vh;
-  margin-top: 5rem;
+  margin-top: 3rem;
   letter-spacing: 0.1rem;
 }
 body .content .form__data {
@@ -104,19 +104,20 @@ body .content .form__data {
 }
 body .content .form__wrapper {
   display: flex;
-  margin-bottom: 2rem;
 }
 body .content .form__data-title {
-  margin-top: 1rem;
   color: hsl(278, 68%, 11%);
+  margin-bottom: 0.5rem;
 }
 body .content .form input {
-  height: 2.5rem;
+  height: 3rem;
   margin: 0.2rem 0 0 0.2rem;
   border-radius: 0.5rem;
+  margin-bottom: 2rem;
+  border-color: hsl(270, 3%, 87%);
 }
 body .content .form #name, body .content .form #number {
-  width: 22rem;
+  width: 21rem;
 }
 body .content .form__month-year {
   display: flex;
@@ -128,7 +129,7 @@ body .content .form #year {
   margin-left: 0.5rem;
 }
 body .content .form__cvc {
-  margin-left: 2rem;
+  margin-left: 1rem;
 }
 body .content .form #cvc {
   width: 10.3rem;
@@ -138,7 +139,7 @@ body .content .form ::placeholder {
   padding-left: 1rem;
 }
 body .content .form__button {
-  width: 22rem;
+  width: 21rem;
   height: 3rem;
   margin-left: 0.3rem;
   border-radius: 0.5rem;
