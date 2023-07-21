@@ -11,20 +11,21 @@ formButton.addEventListener('click', (e) => {
 })
 
 inputName.addEventListener('input', (e) => {
-    validateName(e)
+    let name = inputName.value
+    validateName(name)
 })
 
-const validateName = (e) => {
-    let name = e.target.value.trim()
-    const isName = /^[a-zA-Z\s]*$/.test(name)
+
+const validateName = (name) => {
+    
+    const isName = /^[a-zA-Z][a-zA-Z\s]*$/.test(name)
     if (!isName) {
         inputName.classList.add('form__invalid')
     }
 
-    else if (isName || name === '') {
+    else {
         inputName.classList.remove('form__invalid')
     }
-
 }
 
 
