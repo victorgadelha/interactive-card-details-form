@@ -91,6 +91,9 @@ body
                 border: 1px solid variables.$Light-grayish-violet
                 font-family: variables.$Family
                 font-size: 1rem
+                
+                &:focus
+                    outline: none
 
             #name, #number
                 width: 21rem
@@ -125,4 +128,5 @@ body
                 letter-spacing: .1rem
                 cursor: pointer
                 
-                
+            .form__invalid
+                border-color: red

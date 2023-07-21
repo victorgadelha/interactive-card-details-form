@@ -119,6 +119,9 @@ body .content .form input {
   font-family: "Space Grotesk", sans-serif;
   font-size: 1rem;
 }
+body .content .form input:focus {
+  outline: none;
+}
 body .content .form #name, body .content .form #number {
   width: 21rem;
 }
@@ -151,6 +154,9 @@ body .content .form__button {
   color: hsl(0, 0%, 100%);
   letter-spacing: 0.1rem;
   cursor: pointer;
+}
+body .content .form .form__invalid {
+  border-color: red;
 }
 
 /*# sourceMappingURL=style.css.map */
