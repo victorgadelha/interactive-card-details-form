@@ -6,6 +6,8 @@ const inputYear = document.querySelector('#year')
 const inputCVC = document.querySelector('#cvc')
 const formButton = document.querySelector('.form__button')
 
+const cardNumber = document.querySelector('.card__front-card-number')
+
 formButton.addEventListener('click', (e) => {
     e.preventDefault()
 })
@@ -15,9 +17,7 @@ inputName.addEventListener('input', (e) => {
     validateName(name)
 })
 
-
 const validateName = (name) => {
-    
     const isName = /^[a-zA-Z][a-zA-Z\s]*$/.test(name)
     if (!isName) {
         inputName.classList.add('form__invalid')
@@ -25,6 +25,7 @@ const validateName = (name) => {
 
     else {
         inputName.classList.remove('form__invalid')
+        cardNumber.innerHTML = name
     }
 }
 
